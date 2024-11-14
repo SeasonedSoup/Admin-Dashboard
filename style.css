@@ -82,6 +82,14 @@ html, body {
     grid-template-columns: 3fr 1fr;
 }
 
-.projects {
+.your-projects {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    background-color: white;
+    border-radius: 10px;
 }
