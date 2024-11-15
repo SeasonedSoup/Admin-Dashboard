@@ -1,0 +1,6 @@
+.sidebar-items img {
+    width: 24px; /* Adjust to your desired size */
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+  }
