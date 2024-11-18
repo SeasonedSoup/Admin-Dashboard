@@ -4,12 +4,19 @@
     --text-primary: black;
     --text-secondary: white;
     --my-gh-avatar: url('https://github.com/SeasonedSoup.png');
-    --gh-avatar1: url('https://github.com/alice.png')
-    --gh-avatar2: url('https://github.com/bob.png')
-    --gh-avatar3: url('https://github.com/charlie.png')
-    --gh-avatar4: url('https://github.com/dave.png')
-
+    --gh-avatar1: url('https://github.com/alice.png');
+    --gh-avatar2: url('https://github.com/bob.png');
+    --gh-avatar3: url('https://github.com/charlie.png');
+    --gh-avatar4: url('https://github.com/dave.png');
 } 
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 img {
     width: 24px;
     height: 24px;
@@ -30,7 +37,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
-    height: 100vh;
 }
 
 .sidebar {
@@ -84,7 +90,9 @@ img {
 .header {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+    box-shadow: 0 10px 20px  black;
+    align-items: center;
 }
 
 .search {
@@ -97,13 +105,28 @@ img {
 .user-shortcuts {
     display: grid;
     grid-template-columns: 80px 80px 80px;
+    justify-items: center;
+    align-items: center;
 }
 
 .header-greetings {
     display: grid;
-    grid-template-rows: 20px 20px;
-    grid-template-columns: 20px 20px;
+    grid-template-rows: 200px 0px;
+    grid-template-columns: 200px 200px;
+    justify-items: start;
+    align-items: center;
 }
+
+.header-greetings .my-github-avatar {
+    margin-left: 80px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 15px;
+}
+
 /* Styles */
 h1 {
   color: white;
@@ -117,9 +140,46 @@ h1 {
 
 .search img {
     align-self: center;
+    justify-self: center;
+    margin-left: 20px;
 }
 .search input {
     background-color: rgb(208, 223, 226);
     border-radius: 24px;
     border: 2px solid white;
+    align-self: center;
+    justify-self: start;
+    width: 1000px;
+    height: 40px;
+}
+
+.my-github-avatar {
+    background: var(--my-gh-avatar) center center / cover no-repeat;
+    border-radius: 50%;
+}
+
+.header-greetings .my-github-avatar {
+    height: 80px;
+    width: 80px;
+}
+.user-shortcuts .my-github-avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.username {
+    margin-left: 24px;
+}
+
+button {
+    background-color: rgb(78, 141, 214);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 24px;
+    height: 50px;
+    font-weight: bold
+}
+
+.user-greet > p {
+    font-size: 2rem;
 }
