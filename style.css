@@ -1,12 +1,17 @@
-.sidebar-items img, .main-logo img {
-    width: 24px;
-    height: 24px;
+.sidebar-items img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-logo img {
+    width: 48px;
+    height: 48px;
 }
 
 /* Layout Grid Positioning */
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
@@ -39,18 +44,32 @@
     display: grid;
     grid-template-columns: 40px 1fr;
     column-gap: 5px;
+    margin-left: 20px;
 }
 
 .main-logo {
   margin-bottom: 50px;
+  margin-left: 5px;
+  justify-items: start;
+  align-items: center;
+  column-gap: 20px;
 }
 
-.sidebar-items:nth-child(6) { /* Items 6 to 9: Settings, Support, Privacy */
-  margin-bottom: 30px; /* Adjust this value to create more space */
+.sidebar-items {
+    justify-items: start;
+    align-items: center;
+}
+
+.sidebar-items:nth-child(6) { 
+  margin-bottom: 50px; 
 }
 /* Styles */
 h1 {
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.main-logo h1 {
+    font-size: 2rem;
 }
