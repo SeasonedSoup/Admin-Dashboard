@@ -1,7 +1,15 @@
 :root {
     font-size: 16px;
     font-family: "Sansita", sans-serif;
-}
+    --text-primary: black;
+    --text-secondary: white;
+    --my-gh-avatar: url('https://github.com/SeasonedSoup.png');
+    --gh-avatar1: url('https://github.com/alice.png')
+    --gh-avatar2: url('https://github.com/bob.png')
+    --gh-avatar3: url('https://github.com/charlie.png')
+    --gh-avatar4: url('https://github.com/dave.png')
+
+} 
 img {
     width: 24px;
     height: 24px;
