@@ -127,6 +127,46 @@ img {
     column-gap: 15px;
 }
 
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 10px 20px  black;
+}
+
+.projects-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.announcements-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    height: 300px;
+    border-left: 10px solid orange;
+    box-shadow: 3.6px 7.2px 7.2px hsl(0deg 0% 0% / 0.39);
+}
+
+.announcements-content, .trending-content {
+    background-color: white;
+    box-shadow: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48);
+}
 /* Styles */
 h1 {
   color: white;
