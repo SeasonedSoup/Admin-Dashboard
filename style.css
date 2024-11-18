@@ -166,12 +166,40 @@ img {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border-radius: 12px;
 }
 
 .announcements-content, .trending-content {
     background-color: white;
     box-shadow: 3.6px 7.2px 7.2px hsl(0deg 0% 0% / 0.39);
+    margin-right: 20px;
+    height: 413px;
+    border-radius: 12px;
+    
 }
+
+.announcement-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 0.7rem;
+}
+
+.announcement1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Styles */
 h1 {
   color: white;
